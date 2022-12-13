@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>社会に役立つOR</title>
+        <script src="./OR_Webster.js"></script>
+    </head>
+    <body>
+        <h1>ウェブスター方式による議席数割り当て</h1>
+
+        <p>ウェブスター方式は議席数割り当てに関して<strong>偏りのない唯一の除数方式</strong>とされている手法です。<br>
+            本プログラムは必要な情報を入力するだけで議席数の割り当てが可能です。<br>
+            入力を終えたら<strong>議席割り当て</strong>ボタンを押してください！！</p>
+
+        <ul>
+            <li>選挙区域数を入力してください</li>
+            <input type="text" id="text1">
+            <button type="button" onclick="Kuiki()">選挙区域数決定！！</button>
+            <li>各区域の総人口を入力してください</li>
+            <button type="button" onclick="People()">人口入力</button>
+            <li>除数(割る数)を入力してください</li>
+            <input type="text" id="text2">
+            <button type="button" onclick="Jyosuu()">除数決定</button>
+            <li>配分議席数を入力してください</li>
+            <input type="text" id="text3">
+            <button type="button" onclick="Haibun()">配分議席数決定</button>
+        </ul>
+
+        <button type="button" onclick="Webster()">議席割り当て</button>
+    
+        <p id="Kekka"></p>
+        
+    </body>
+    <style> 
+        strong{color: red;}
+    </style>
+</html>
